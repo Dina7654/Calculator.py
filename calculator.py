@@ -15,8 +15,22 @@ def remainder(x,y):
 
 title = print("Calculator!")    
 operator = input("Enter: +,-,*,/,% :")
-num1 = float(input("Enter first number :"))
-num2 = float(input("Enter second number :"))
+
+while True:
+    try:
+        num1_str = input("Enter first number:")
+        num1 = float(num1_str)
+        break
+    except ValueError:
+        print("Enter a proper number!")
+        
+while True:
+    try:
+        num2_str = input("Enter second number:")
+        num2 = float(num1_str)
+        break
+    except ValueError:
+        print("Enter a proper number!")
 
 if(operator == "+"):
     print(str(num1) + " + " + str(num2) + " = " + str(add(num1, num2)))
@@ -34,3 +48,4 @@ elif(operator == "%"):
 else:
     print("Invalid operator")
     
+
