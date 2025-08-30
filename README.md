@@ -1,1 +1,2 @@
 # Calculator.py
+this program prompts the user to enter an operator(+,-,*,/,%) and 2 numbers. using an if else loop, the program will take the two numbers and wither, multiply, add, subtract, divide or mod them. If we're dividing and number 2 is 0, the program will return invalid, if the user entered a different operator, the program will return invalid. If number 1 or number 2 is not an integer, a message will appear that prompts the user to enter an integer.
